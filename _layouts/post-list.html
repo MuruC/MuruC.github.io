@@ -23,13 +23,22 @@ layout: compress
                 </div>
                 <div class="post-list">
                     {% for post in site.posts %} 
-                        {% if post.project == null %}
+                        {% if post.pagetype == page.pagetype %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
+						
+						<a href="{{ post.url }}">
+							<img src="{{ 'assets/img/'}}{{post.figure}}" class="img-circle2">
+						</a>
+						
+					
+						
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                             <p>{{ post.excerpt }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
-                        </li>
+							<a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+						
+                            </li>
+                       
                     </ul>
                         {% endif %}
                     {% endfor %}
