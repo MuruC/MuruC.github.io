@@ -21,8 +21,8 @@ figure: star_figure.png
 Starry Flight is a 2d Scroller game. The player will help grey star to shine again and beat ghosts and boss.
 
 ## Demo
-See a [gameplay video of Starry Flight](https://youtu.be/p-ESWeAtGok) on Youtube.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p-ESWeAtGok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Skill
 
@@ -45,4 +45,8 @@ The player dash for a distance. The distance depends on "magic point" (shown on 
 
 ## System
 
-* Player can enhance the HP or damage value or magic point. Player needs to 
+* Player can enhance the HP or damage value or magic point. By shooting grey stars, players can collect yellow star scores to level up.
+
+* In the second level, player needs to avoid flower barrage and defeat the boss.
+
+[Install Starry Flight](https://muruc.itch.io/starry-flight){: .btn}

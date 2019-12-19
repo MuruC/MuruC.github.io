@@ -126,3 +126,4 @@ There are 21 heroes in total:
 
 * <b>Master of Circus</b>: Switch the positions of an enemy and a teammate
 
+[Install Moon's League](https://muruc.itch.io/moons-league){: .btn}
