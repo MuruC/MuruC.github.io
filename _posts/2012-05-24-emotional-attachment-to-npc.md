@@ -42,11 +42,7 @@ In <i>How to Write Game Script</i> written by Sasaki Tomohiro, he suggests playw
 
 Katherine Isbister has more detailed theory explaining social roles of NPCs in Better Game Characters by Design: 
 
-Social roles are mutually recognized sets of expected behaviors and reactions
-
-that a person will engage in with respect to another person. These roles develop in
-
-social situations in which there are predictable patterns of:
+Social roles are mutually recognized sets of expected behaviors and reactions that a person will engage in with respect to another person. These roles develop in social situations in which there are predictable patterns of:
 
 * interdependence because of overlapping goals and complementary abilities,
 
