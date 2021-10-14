@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Pet_Island"
+title: "Pet Island"
 date: 7/2020-1/2020
 excerpt: "Professional metaverse game"
 tags: [game, professional, Lua]
 comments: true
 game: true
 pagetype: 1
-figure: pet-figure.png
+figure: pet_figure.png
 
 ---
 
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QvPPOupOO20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I did all programming parts.
+I did all programming parts and collaborated with Artist and Designer Jerry Liu.
 
 
 ## Set data structure of stat inflation for the designer
