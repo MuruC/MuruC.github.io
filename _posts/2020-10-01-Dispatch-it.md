@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Pet Island"
-date: 7/2020-1/2020
-excerpt: "Professional metaverse game"
-tags: [game, professional, Lua]
+date: 9/2021-10/2021
+excerpt: "AR narrative game on Hololens"
+tags: [game, AR]
 comments: true
 game: true
 pagetype: 1
-figure: pet_figure.png
+figure: telephone_figure.png
 
 ---
 
@@ -22,7 +22,7 @@ Collaborated with programmer Jingyu Zhuang, artist Dannis Wang, artist Nolan Pea
 
 <pre>
 <code>
-    using DictOptionNodes = Dictionary<phonePlugInEnum, Node>;
+    using DictOptionNodes = Dictionary<\phonePlugInEnum, Node>;
     public enum phonePlugInEnum { hospital, police, fireStation, conversation, ring, ending }
     class Node
     {
@@ -106,8 +106,8 @@ namespace TimeNameSpace {
     public class TimeMgr : MonoBehaviour
     {
         public static TimeMgr Instance = null;
-        List<Event> allEventList = new List<Event>();
-        List<Event> activeEventList = new List<Event>();
+        List<\Event> allEventList = new List<\Event>();
+        List<\Event> activeEventList = new List<\Event>();
         private float curTime = 0f;
         private void Awake()
         {
