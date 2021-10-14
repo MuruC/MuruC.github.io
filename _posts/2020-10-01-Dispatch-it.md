@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pet Island"
+title: "Dispatch It!"
 date: 9/2021-10/2021
 excerpt: "AR narrative game on Hololens"
 tags: [game, AR]
@@ -22,7 +22,7 @@ Collaborated with programmer Jingyu Zhuang, artist Dannis Wang, artist Nolan Pea
 
 <pre>
 <code>
-    using DictOptionNodes = Dictionary<\phonePlugInEnum, Node>;
+    using DictOptionNodes = Dictionary<phonePlugInEnum, Node>;
     public enum phonePlugInEnum { hospital, police, fireStation, conversation, ring, ending }
     class Node
     {
@@ -78,7 +78,7 @@ Collaborated with programmer Jingyu Zhuang, artist Dannis Wang, artist Nolan Pea
         public DictOptionNodes OptionNodes { get; set; }
     }
 </code>
-<pre>
+</pre>
 
 ## Wrote and refine. the main structure of the game, improving team's working efficiency.
 <p>· Made a Time Manager to replace coroutine. The Time Manager includes unloop delayed event method and loop real time event method.</p>
@@ -106,8 +106,8 @@ namespace TimeNameSpace {
     public class TimeMgr : MonoBehaviour
     {
         public static TimeMgr Instance = null;
-        List<\Event> allEventList = new List<\Event>();
-        List<\Event> activeEventList = new List<\Event>();
+        List<Event> allEventList = new List<Event>();
+        List<Event> activeEventList = new List<Event>();
         private float curTime = 0f;
         private void Awake()
         {
@@ -168,4 +168,4 @@ namespace TimeNameSpace {
 
     }
 </code>
-<pre>
+</pre>
