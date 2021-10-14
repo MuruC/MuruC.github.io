@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dispatch It!"
-date: 9/2021-10/2021
+date: 2021-09-22
 excerpt: "AR narrative game on Hololens"
 tags: [game, AR]
 comments: true
