@@ -18,14 +18,14 @@ I did all programming parts.
 
 
 ## Set data structure of stat inflation for the designer
-· Pet properties such as the model, rarity, egg region, levels, and stats, etc. The designer can make a new pet by add a new line on pet's propertoies sheet.
-· Item and potion properties such as the price, the time it can effect and its function. The designer can make a new item by add a new line on item design sheet.
-· Mines properties such as model, time refresh, zoning, and money player receives, etc.
-· Bag system and Pet collection handbook.
+<p>· Pet properties such as the model, rarity, egg region, levels, and stats, etc. The designer can make a new pet by add a new line on pet's propertoies sheet.</p>
+<p>· Item and potion properties such as the price, the time it can effect and its function. The designer can make a new item by add a new line on item design sheet.</p>
+<p>· Mines properties such as model, time refresh, zoning, and money player receives, etc.</p>
+<p>· Bag system and Pet collection handbook.</p>
 
 ## Animation tool for the artist
-· UI animation tool such as where should the UI pop up and the way the UI pop up.
-· Pet spawn animation tool such as camera angle, animation length, etc.
+<p>· UI animation tool such as where should the UI pop up and the way the UI pop up.</p>
+<p>· Pet spawn animation tool such as camera angle, animation length, etc.</p>
 
 ## Pet simple AI by FSM
 
@@ -35,14 +35,14 @@ I did all programming parts.
             self.allState = allState    
             self.curState = nil
         end
-    
+
         function FsmBase:RunFSM()
             local curState = self.allState[self.curState]
             if curState and curState.OnUpdate then
                 curState.OnUpdate(self)
             end
         end
-    
+
         function FsmBase:ChangeState(_nextState)
             local curState = self.allState[self.curState]
         	if curState and curState.OnLeave then
@@ -54,7 +54,7 @@ I did all programming parts.
         		nextState.OnEnter(self)
         	end
         end
-    
+
         function FsmBase:ProcessLocalEvent(event,...)
         	local args = {...}
         	local curState = self.allState[self.curState]
@@ -62,7 +62,7 @@ I did all programming parts.
         		curState.OnEvent(self,event,table.unpack(args))
         	end
         end
-    
+
         function FsmBase:IsInState(state)
         	if self.curState == state then
         		return true
@@ -72,8 +72,8 @@ I did all programming parts.
     </code>
 </pre>
 
-Above is the base function of FSM. Specifically, FSM has OnEnter, OnLeave, OnUpdate, OnEvent. 
-I used FSM to make pet follow, idle, dig mine and play around.
+<p>Above is the base function of FSM. Specifically, FSM has OnEnter, OnLeave, OnUpdate, OnEvent. </p>
+<p>I used FSM to make pet follow, idle, dig mine and play around.</p>
 
 ## Data security
 Most of data calculation happens in server-sided to insure data security. And server pass the calculation result to client.
