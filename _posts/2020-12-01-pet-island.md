@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Pet Island"
+title: "Pet_Island"
 date: 7/2020-1/2020
-excerpt: "Individual Project: A leisure mobile game"
+excerpt: "Professional metaverse game"
 tags: [game, professional, Lua]
 comments: true
 game: true
@@ -12,7 +12,7 @@ figure: pet-figure.png
 ---
 
 ## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=QvPPOupOO20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QvPPOupOO20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I did all programming parts.
 
@@ -28,48 +28,49 @@ I did all programming parts.
 · Pet spawn animation tool such as camera angle, animation length, etc.
 
 ## Pet simple AI by FSM
-<code>
 
-function FsmBase:NewFSM(allState)
-    self.allState = allState    
-    self.curState = nil
-end
-
-function FsmBase:RunFSM()
-    local curState = self.allState[self.curState]
-    if curState and curState.OnUpdate then
-        curState.OnUpdate(self)
-    end
-end
-
-function FsmBase:ChangeState(_nextState)
-    local curState = self.allState[self.curState]
-	if curState and curState.OnLeave then
-		curState.OnLeave(self)
-	end
-	local nextState = self.allState[_nextState]
-	self.curState = _nextState
-	if nextState and nextState.OnEnter then
-		nextState.OnEnter(self)
-	end
-end
-
-function FsmBase:ProcessLocalEvent(event,...)
-	local args = {...}
-	local curState = self.allState[self.curState]
-	if curState and curState.OnEvent then
-		curState.OnEvent(self,event,table.unpack(args))
-	end
-end
-
-function FsmBase:IsInState(state)
-	if self.curState == state then
-		return true
-	end
-	return false
-end
-
-</code>
+<pre>
+    <code>
+        function FsmBase:NewFSM(allState)
+            self.allState = allState    
+            self.curState = nil
+        end
+    
+        function FsmBase:RunFSM()
+            local curState = self.allState[self.curState]
+            if curState and curState.OnUpdate then
+                curState.OnUpdate(self)
+            end
+        end
+    
+        function FsmBase:ChangeState(_nextState)
+            local curState = self.allState[self.curState]
+        	if curState and curState.OnLeave then
+        		curState.OnLeave(self)
+        	end
+        	local nextState = self.allState[_nextState]
+        	self.curState = _nextState
+        	if nextState and nextState.OnEnter then
+        		nextState.OnEnter(self)
+        	end
+        end
+    
+        function FsmBase:ProcessLocalEvent(event,...)
+        	local args = {...}
+        	local curState = self.allState[self.curState]
+        	if curState and curState.OnEvent then
+        		curState.OnEvent(self,event,table.unpack(args))
+        	end
+        end
+    
+        function FsmBase:IsInState(state)
+        	if self.curState == state then
+        		return true
+        	end
+        	return false
+        end
+    </code>
+</pre>
 
 Above is the base function of FSM. Specifically, FSM has OnEnter, OnLeave, OnUpdate, OnEvent. 
 I used FSM to make pet follow, idle, dig mine and play around.

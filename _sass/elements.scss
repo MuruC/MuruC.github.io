@@ -228,3 +228,10 @@ kbd {
     font-weight: 300;
     margin-bottom: 10px;
 }
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
