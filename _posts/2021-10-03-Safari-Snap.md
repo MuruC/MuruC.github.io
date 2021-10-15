@@ -51,7 +51,7 @@ end
 
 ## Cooperated with other programmers to build path finding system.
 <p>· Understood the basic tool of pathfinding produced by the engine and taught other programmers.
-<p>· Wrote methods of pathfinding in different situations for animal ai, such as animal being chased.
+<p>· Wrote interfaces of pathfinding in different situations for animal ai, such as animal being chased.
 
 ## Contributed Design to camera system and photo editing system. Built these two systems and made them very customizable for designers.
 <p>· The customizable camera and photo system includes filter, sticker, selfi gesture, etc.

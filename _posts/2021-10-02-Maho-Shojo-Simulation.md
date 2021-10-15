@@ -24,7 +24,7 @@ Collaborated with programmer and designer Huijie Bao, artist Sandra Liu, artist 
 <span class="caption">screenshot of Inspector</span>
 
 ## Quick Time Event system.
-<p>· An easily used QTE system. Other programer can add a new QTE event by on method. This system contains trigger event, condition, success event, fail event, qte time, etc.</p>
+<p>· An easily used QTE system. Other programer can add a new QTE event by on interface. This system contains trigger event, condition, success event, fail event, qte time, etc.</p>
 
 <pre>
 <code>

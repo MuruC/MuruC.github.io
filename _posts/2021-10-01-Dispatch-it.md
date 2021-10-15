@@ -81,9 +81,9 @@ Collaborated with programmer Jingyu Zhuang, artist Dannis Wang, artist Nolan Pea
 </pre>
 
 ## Wrote and refine. the main structure of the game, improving team's working efficiency.
-<p>· Made a Time Manager to replace coroutine. The Time Manager includes unloop delayed event method and loop real time event method.</p>
+<p>· Made a Time Manager to replace coroutine. The Time Manager includes unloop delayed event interface and loop real time event interface.</p>
 <p>· Made public enumeration and dictionary. So that other programmer and designer didn't need to memorize the plug index;</p>
-<p>· Made Sound Manager with overriden methods.</p>
+<p>· Made Sound Manager with overriden interfaces.</p>
 
 <pre>
 <code>
