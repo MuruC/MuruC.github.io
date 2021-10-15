@@ -12,6 +12,9 @@ figure: strategy-figure.png
 
 [Install Moon's League](https://muruc.itch.io/moons-league){: .btn}
 
+## Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PiBjiLdneK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {: .center}
 ![image](https://user-images.githubusercontent.com/49530505/69022293-d72e6180-09f5-11ea-92c0-be14255ae1d5.png "map")
@@ -30,10 +33,6 @@ may have impact on terrain or other effects.
 
 I did the
 design of characters’ skill, value design and all coding. All graphs were designed by Dayoon Lee.
-
-## Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PiBjiLdneK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Game Mechanism
 

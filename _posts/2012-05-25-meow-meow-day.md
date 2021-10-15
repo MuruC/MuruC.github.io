@@ -13,6 +13,9 @@ figure: meow-figure.png
 
 [Install Meow Meow Day](https://muruc.itch.io/meow-meow-day){: .btn}
 
+## Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xRw9uXnT8KA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 {% capture images %}
     https://user-images.githubusercontent.com/49530505/69005706-eadbb880-0960-11ea-8210-2d68da54bc25.png
     https://user-images.githubusercontent.com/49530505/69009079-f80e9c80-098c-11ea-9f47-5898af195f73.png
@@ -22,9 +25,6 @@ figure: meow-figure.png
 Meow Meow day is a narrative game made by Unity. The player adopts three cats that have different personality. Player should decide daily activity schedule for them and choose the right chat choice according to their characteristics.
 
 All art assets are original work in addition to programming.
-
-## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xRw9uXnT8KA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Interaction with cats
