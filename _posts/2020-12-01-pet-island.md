@@ -14,7 +14,7 @@ figure: pet_figure.png
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QvPPOupOO20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I did all programming parts and collaborated with Artist and Designer Jerry Liu.
+I did all programming parts and collaborated with Artist and Designer Jerry Liu from September 2020 to Janurary 2021.
 
 
 ## Set data structure of stat inflation for the designer

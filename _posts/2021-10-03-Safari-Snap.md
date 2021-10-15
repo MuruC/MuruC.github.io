@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Safari Snap"
-date: 2021-07-22
+date: 2021-10-14
 excerpt: "Professional Metaverse Game"
 tags: [game, Professional]
 comments: true
@@ -14,7 +14,7 @@ figure: safari_figure.png
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/87jT2Cp5-4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Worked in an 8-people team at Lilith Games.
+Worked in an 8-people team at Lilith Games from Mars 2021 to July 2021.
 
 ## Behavior Tree for animal AI
 <p>· Behavior Tree contains Sequence, Selector, Condition, Decoration.</p>
