@@ -2,14 +2,19 @@
 layout: post
 title: "Safari Snap"
 date: 2021-10-14
-excerpt: "Lead Programmer || Lua
-||Professional Metaverse Game"
 tags: [game, Professional]
 comments: true
 game: true
 pagetype: 1
 figure: safari_figure.png
 
+excerpt_separator: <!--more-->
+---
+Stuff, stuff, stuff, stuff, stuff, stuff.
+
+More stuff, more stuff, more stuff, more stuff.
+
+<!--more-->
 ---
 
 ## Demo

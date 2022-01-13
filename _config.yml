@@ -13,6 +13,7 @@ url:                https://muruc.github.io
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
+excerpt_separator: <!--more-->
 highlighter:        rouge
 kramdown:
   auto_ids:         true
@@ -55,9 +56,6 @@ linkedin:          muru-chen-a98137193
 #youtube:           username
 #youtube-channel:   channel
 #soundcloud:        username
-#			<li>
-#				<a href="{{ site.url }}/papers/">Papers</a>
-#			</li>	weibo:             猪岛国王霉君
 #flickr:            username
 #codepen:           username
 #keybase:           username
