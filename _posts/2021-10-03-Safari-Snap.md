@@ -10,10 +10,10 @@ figure: safari_figure.png
 
 excerpt_separator: <!--more-->
 ---
-Stuff, stuff, stuff, stuff, stuff, stuff.
-
-More stuff, more stuff, more stuff, more stuff.
-
+Observe nature, take photos and have fun with friends
+Role: Lead Programmer
+Platform: Lua + in-house game engines
+Company: Lilith Games
 <!--more-->
 ---
 
