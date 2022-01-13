@@ -1,14 +1,22 @@
 ---
 layout: post
 title: "Pet Island"
-date: 7/2020-1/2020
-excerpt: "Professional metaverse game"
+date: 2021-10-13
 tags: [game, professional, Lua]
 comments: true
 game: true
 pagetype: 1
 figure: pet_figure.png
+excerpt_separator: <!--more-->
+---
+Collect pets and dig mines
 
+Role: Sole Programmer and designer
+
+Platform: Lua + in-house game engines
+
+Company: Lilith Games
+<!--more-->
 ---
 
 ## Demo

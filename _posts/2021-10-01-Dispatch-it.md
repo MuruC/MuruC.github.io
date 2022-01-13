@@ -2,13 +2,20 @@
 layout: post
 title: "Dispatch It!"
 date: 2021-09-22
-excerpt: "AR narrative game on Hololens"
 tags: [game, AR]
 comments: true
 game: true
 pagetype: 1
 figure: telephone_figure.png
 
+excerpt_separator: <!--more-->
+---
+AR narrative game on Hololens
+
+Role: Programmer
+
+Platform: C# + Unity + Hololens
+<!--more-->
 ---
 
 ## Demo

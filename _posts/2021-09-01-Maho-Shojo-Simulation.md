@@ -2,13 +2,19 @@
 layout: post
 title: "Maho Shojo Simulation"
 date: 2021-10-06
-excerpt: "VR hand tracker game on Steam Vive"
 tags: [game, VR]
 comments: true
 game: true
 pagetype: 1
 figure: maho_figure.png
+excerpt_separator: <!--more-->
+---
+VR hand tracker game on Steam Vive
 
+Role: Programmer and designer
+
+Platform: C# + Unity + Steam Vive + VR
+<!--more-->
 ---
 
 ## Demo

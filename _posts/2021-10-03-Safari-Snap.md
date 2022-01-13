@@ -11,8 +11,11 @@ figure: safari_figure.png
 excerpt_separator: <!--more-->
 ---
 Observe nature, take photos and have fun with friends
+
 Role: Lead Programmer and designer
+
 Platform: Lua + in-house game engines
+
 Company: Lilith Games
 <!--more-->
 ---
