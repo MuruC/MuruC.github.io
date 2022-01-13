@@ -2,7 +2,8 @@
 layout: post
 title: "Safari Snap"
 date: 2021-10-14
-excerpt: "Lead Programmer || Lua || \n Professional Metaverse Game"
+excerpt: "Lead Programmer || Lua
+||Professional Metaverse Game"
 tags: [game, Professional]
 comments: true
 game: true
