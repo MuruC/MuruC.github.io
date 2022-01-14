@@ -8,15 +8,13 @@ game: true
 pagetype: 1
 
 
-excerpt_separator: <!--more-->
+excerpt_separator: 
 ---
 Co-op kinect game
 
 Role: Programmer
 
 Platform: C# + Unity + Kinect
-<!--more-->
-s
 ---
 
 
