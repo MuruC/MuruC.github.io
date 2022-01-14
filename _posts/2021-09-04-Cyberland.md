@@ -6,7 +6,7 @@ tags: [game, Kinect]
 comments: true
 game: true
 pagetype: 1
-figure: telephone_figure.png
+figure: cyberland-feature.png
 
 excerpt_separator: <!--more-->
 ---
