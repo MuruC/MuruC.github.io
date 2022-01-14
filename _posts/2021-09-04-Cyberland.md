@@ -6,16 +6,17 @@ tags: [game, Kinect]
 comments: true
 game: true
 pagetype: 1
+figure: cyberland-feature.png
 
-
-excerpt_separator: <!--end_excerpt-->
+excerpt_separator: <!--more-->
 ---
 Co-op kinect game
 
 Role: Programmer
 
 Platform: C# + Unity + Kinect
-<!--end_excerpt-->
+<!--more-->
+---
 
 
 ## Demo
