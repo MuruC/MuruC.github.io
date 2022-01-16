@@ -11,13 +11,12 @@ excerpt_separator: <!--more-->
 ---
 Collect pets and dig mines
 
-Role: Sole Programmer and designer
+<b>Role:</b> Sole Programmer and designer
 
-Platform: Lua + in-house game engines
+<b>Platform:</b> Lua + in-house game engines
 
 Company: Lilith Games
 <!--more-->
----
 
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QvPPOupOO20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

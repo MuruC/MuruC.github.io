@@ -12,13 +12,12 @@ excerpt_separator: <!--more-->
 ---
 Observe nature, take photos and have fun with friends
 
-Role: Lead Programmer and designer
+<b>Role:</b> Lead Programmer and designer
 
-Platform: Lua + in-house game engines
+<b>Platform:</b> Lua + in-house game engines
 
 Company: Lilith Games
 <!--more-->
----
 
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/87jT2Cp5-4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
