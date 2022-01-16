@@ -8,6 +8,7 @@ game: true
 pagetype: 1
 figure: cyberland-feature.png
 
+---
 excerpt_separator: <!--more-->
 ---
 Co-op kinect game
@@ -16,7 +17,7 @@ Role: Programmer
 
 Platform: C# + Unity + Kinect
 <!--more-->
----
+
 
 
 ## Demo
