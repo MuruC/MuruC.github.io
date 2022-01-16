@@ -9,14 +9,14 @@ pagetype: 1
 figure: telephone_figure.png
 
 excerpt_separator: <!--more-->
----
+----
 AR narrative game on Hololens
 
 Role: Programmer
 
 Platform: C# + Unity + Hololens
 <!--more-->
----
+----
 
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lsWpTOg26Pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
