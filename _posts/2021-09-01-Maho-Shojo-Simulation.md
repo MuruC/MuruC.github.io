@@ -11,10 +11,11 @@ excerpt_separator: <!--more-->
 ---
 VR hand tracker game on Steam Vive
 
-<b>Role:</b> Programmer and designer
+Role: Programmer and designer
 
-<b>Platform:</b> C# + Unity + Steam Vive + VR
+Platform: C# + Unity + Steam Vive + VR
 <!--more-->
+---
 
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k_CLwO1Jkfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
