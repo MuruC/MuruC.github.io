@@ -12,9 +12,9 @@ excerpt_separator: <!--more-->
 ---
 Co-op kinect game
 
-Role: Programmer
+<b>Role:</b> Programmer
 
-Platform: C# + Unity + Kinect
+<b>Platform:</b> C# + Unity + Kinect
 <!--more-->
 
 ## Demo
