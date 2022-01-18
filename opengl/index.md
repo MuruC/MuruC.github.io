@@ -1,7 +1,7 @@
 ---
 layout: post-list
-title: All Interactive Media Arts
+title: All OpenGL Projects
 excerpt: "A List of Posts"
 comments: false
-pagetype: 2
+pagetype: 3
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2D Particle System"
+title: "Basic Lightings"
 date: 2021-01-10
 excerpt: "OpenGL + Lua + C++"
 tags: [OpenGL, C++]
@@ -12,17 +12,17 @@ figure: 2d-particle-system-figure.png
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J-SP_gg1kiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Main Principles and processes
+## Main Principles and processes
 
-## Orthographic camera
+# Orthographic camera
 
 Make a orthographic camera that can be zoomed by mouse;
 
-## Click mouse to create particles
+# Click mouse to create particles
 
 Get the position of mouse. Transform the rectangle and pass the matrix position to vertex shader. 
 
-## Object-oriented programming
+# Object-oriented programming
 
 Create a particle class that includes particle.emit(), particle.render(), particle.update() and some particle properties.
 
