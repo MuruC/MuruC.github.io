@@ -1,7 +1,7 @@
 ---
 layout: post-list
-title: All OpenGL Projects
+title: All paper Projects
 excerpt: "A List of Posts"
 comments: false
-pagetype: 3
+pagetype: 4
 ---
