@@ -6,26 +6,34 @@ excerpt: "OpenGL + Lua + C++"
 tags: [OpenGL, C++]
 comments: true
 pagetype: 3
-figure: 2d-particle-system-figure.png
+figure: basic-lightings.png
 ---
 
 ## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J-SP_gg1kiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{: .center}
+![image](https://user-images.githubusercontent.com/49530505/149877161-3e7e0885-c36b-422b-84fc-25de5eb4e964.png "Basic Lightings")
+<span class="caption">screenshot of basic lightings</span>
 
 ## Main Principles and processes
 
-# Orthographic camera
+# Ambient Light
 
-Make a orthographic camera that can be zoomed by mouse;
+Add an ambient light for the whole cube.
 
-# Click mouse to create particles
+{: .center}
+![image](https://user-images.githubusercontent.com/49530505/149878655-e5e99099-7407-4ab9-b704-50b0dae50de6.png "Ambient light")
+<span class="caption">screenshot of basic lightings</span>
 
-Get the position of mouse. Transform the rectangle and pass the matrix position to vertex shader. 
+# Diffuse Light
 
-# Object-oriented programming
+simulates the directional impact a light object has on an object.
 
-Create a particle class that includes particle.emit(), particle.render(), particle.update() and some particle properties.
+{: .center}
+![image](https://user-images.githubusercontent.com/49530505/149878684-374fff1a-6d4c-4118-94bc-e3a431540fff.png "Diffuse light")
+<span class="caption">screenshot of basic lightings</span>
 
-Create a particle pool that contains 1000 particles. Every time when the user create particle, the particle set active from the pool. When the particle's lifetime is less 0, the particle is set to inactive.
+# Specular light
 
-[Download codes](https://github.com/MuruC/ParticleSystem){: .btn}
+simulates the bright spot of a light that appears on shiny objects. 
+
+[Download codes](https://github.com/MuruC/OpenGL-Practice){: .btn}
