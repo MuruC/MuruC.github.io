@@ -5,7 +5,7 @@ date: 2019-5-18
 excerpt: " "
 tags: [The Scroll of Taiwu, paper]
 comments: true
-pagetype: 3
+pagetype: 4
 figure: taiwu-figure.png
 ---
 

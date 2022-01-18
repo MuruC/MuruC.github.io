@@ -5,7 +5,7 @@ date: 2019-10-30
 excerpt: "capstone research paper"
 tags: [emotion, paper]
 comments: true
-pagetype: 3
+pagetype: 4
 figure: peach-figure.png
 ---
 

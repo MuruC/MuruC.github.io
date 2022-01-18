@@ -5,7 +5,7 @@ date: 2018-12-17
 excerpt: " "
 tags: [Persona 5, paper]
 comments: true
-pagetype: 3
+pagetype: 4
 figure: persona5-figure.jpg
 ---
 
