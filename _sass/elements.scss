@@ -229,9 +229,19 @@ kbd {
     margin-bottom: 10px;
 }
 
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-}
+//pre code {
+//  background-color: #eee;
+//  border: 1px solid #999;
+//  display: block;
+//  padding: 20px;
+//}
+
+code {
+  border: 0px solid #e8e8e8;
+  background-color: #282828; // import for the background of the code, even with highlighting
+  white-space: pre-wrap; // wrap the code
+ }
+ 
+ pre {
+  border: 0px solid #e8e8e8;
+ }
