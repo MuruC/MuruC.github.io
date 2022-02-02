@@ -1,31 +1,108 @@
 ---
 layout: post
-title: "2D Particle System"
+title: "Import Model"
 date: 2021-01-10
 excerpt: "OpenGL + Lua + C++"
 tags: [OpenGL, C++]
 comments: true
 pagetype: 3
-figure: 2d-particle-system-figure.png
+figure: import-model.png
 ---
+## HTML Elements
 
-## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J-SP_gg1kiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
-# Main Principles and processes
+# Heading 1
 
-## Orthographic camera
+## Heading 2
 
-Make a orthographic camera that can be zoomed by mouse;
+### Heading 3
 
-## Click mouse to create particles
+#### Heading 4
 
-Get the position of mouse. Transform the rectangle and pass the matrix position to vertex shader. 
+##### Heading 5
 
-## Object-oriented programming
+###### Heading 6
 
-Create a particle class that includes particle.emit(), particle.render(), particle.update() and some particle properties.
+### Body text
 
-Create a particle pool that contains 1000 particles. Every time when the user create particle, the particle set active from the pool. When the particle's lifetime is less 0, the particle is set to inactive.
+Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
-[Download codes](https://github.com/MuruC/ParticleSystem){: .btn}
+![Smithsonian Image](https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg)
+{: .image-right}
+
+*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+
+HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+
+### Blockquotes
+
+> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+
+## List Types
+
+### Ordered Lists
+
+1. Item one
+   1. sub item one
+   2. sub item two
+   3. sub item three
+2. Item two
+
+### Unordered Lists
+
+* Item one
+* Item two
+* Item three
+
+## Tables
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+{: rules="groups"}
+
+## Code Snippets
+
+{% highlight css %}
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
+{% endhighlight %}
+
+## Buttons
+
+Make any link standout more when applying the `.btn` class.
+
+{% highlight html %}
+<a href="#" class="btn btn-success">Success Button</a>
+{% endhighlight %}
+
+<div markdown="0"><a href="#" class="btn">Primary Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
+<div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+
+## KBD
+
+You can also use `<kbd>` tag for keyboard buttons.
+
+{% highlight html %}
+<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
+{% endhighlight %}
+
+Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midtown Maddness!!**
+
+## Notices
+
+**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+{: .notice}
