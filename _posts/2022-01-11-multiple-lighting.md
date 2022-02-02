@@ -20,8 +20,8 @@ figure: multiple-lightings.png
 
 We can just define a light direction in Light class
 
-{% highlight c++ %}
-    vec3 lightDir = normalize(-light.direction);
+{% highlight html %}
+<a href="#" class="btn btn-success">Success Button</a>
 {% endhighlight %}
 
 # Point Light
