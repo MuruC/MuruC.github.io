@@ -21,16 +21,7 @@ figure: multiple-lightings.png
 We can just define a light direction in Light class
 
 {% highlight c++ %}
-    struct Light {
-        vec3 direction;
-        ...
-    };
-    ...
-    void main()
-    {
-        vec3 lightDir = normalize(-light.direction);
-        ...
-    }
+    vec3 lightDir = normalize(-light.direction);
 {% endhighlight %}
 
 # Point Light
