@@ -36,4 +36,4 @@ simulates the directional impact a light object has on an object.
 
 simulates the bright spot of a light that appears on shiny objects. 
 
-[Download codes](https://github.com/MuruC/OpenGL-Practice){: .btn}
+<div markdown="0"><a href="https://github.com/MuruC/OpenGL-Practice" class="btn btn-info">Download codes</a></div>

@@ -28,4 +28,4 @@ Create a particle class that includes particle.emit(), particle.render(), partic
 
 Create a particle pool that contains 1000 particles. Every time when the user create particle, the particle set active from the pool. When the particle's lifetime is less 0, the particle is set to inactive.
 
-[Download codes](https://github.com/MuruC/ParticleSystem){: .btn}
+<div markdown="0"><a href="https://github.com/MuruC/ParticleSystem" class="btn btn-info">Download codes</a></div>
