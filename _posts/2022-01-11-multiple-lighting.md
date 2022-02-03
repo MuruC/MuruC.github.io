@@ -2,7 +2,7 @@
 layout: post
 title: "Multiple Lightings"
 date: 2021-01-11
-excerpt: "OpenGL + Lua + C++"
+excerpt: "Directional light, point light, spot light"
 tags: [OpenGL, C++]
 comments: true
 pagetype: 3
