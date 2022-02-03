@@ -79,4 +79,17 @@ We need: the spotlight's position vector (to calculate the fragment-to-light's d
 
 We pass the cosine value because it is easier to compare
 
+{% highlight c %}
+    struct Light {
+        vec3  position;
+        vec3  direction;
+        float cutOff;
+        ...
+    };  
+{% endhighlight %}
+
+{% highlight c %}
+    lightingShader.setFloat("light.cutOff",   glm::cos(glm::radians(12.5f)));
+{% highlight c %}
+
 <div markdown="0"><a href="https://github.com/MuruC/OpenGL-Practice" class="btn btn-info">Download codes</a></div>
