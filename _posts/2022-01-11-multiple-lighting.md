@@ -16,12 +16,21 @@ figure: multiple-lightings.png
 {% endcapture %}
 {% include gallery images=images caption="photos of directional light" cols=2 %}
 
-## Calculate light direction
+### Calculate light direction
 
 We can just define a light direction in Light class
 
-{% highlight html %}
-<a href="#" class="btn btn-success">Success Button</a>
+{% highlight c %}
+    struct Light {
+        vec3 direction;
+        ...
+    };
+    ...
+    void main()
+    {
+      vec3 lightDir = normalize(-light.direction);
+      ...
+    }
 {% endhighlight %}
 
 # Point Light
@@ -31,22 +40,110 @@ We can just define a light direction in Light class
 {% endcapture %}
 {% include gallery images=images caption="photos of point light" cols=2 %}
 
-## Implementing Attenuation
+### Calculate Attenuation
 
-# Main Principles and processes
+reduce the intensity of light over the distance a light ray travels 
 
-## Orthographic camera
+{% capture images %}
+	https://user-images.githubusercontent.com/49530505/152254949-9df77e6f-f310-4a01-a7bb-8ca4b0e1fed2.png
+{% endcapture %}
+{% include gallery images=images caption="attenuation" cols=2 %}
 
-Make a orthographic camera that can be zoomed by mouse;
+{% highlight c %}
+    struct Light {
+        float constant;
+        float linear;
+        float quadratic;
+        ...
+    };
+    ...
+    void main()
+    {
+        float distance    = length(light.position - FragPos);
+        loat attenuation = 1.0 / (light.constant + light.linear * distance + 
+                light.quadratic * (distance * distance));
+        ...
+    }
+{% endhighlight %}
 
-## Click mouse to create particles
+### Apply Attenuation
 
-Get the position of mouse. Transform the rectangle and pass the matrix position to vertex shader. 
+we include this attenuation value in the lighting calculations by multiplying the attenuation value with the ambient, diffuse and specular colors.
 
-## Object-oriented programming
+{% highlight c %}
+    void main()
+    {
+        ambient  *= attenuation; 
+        diffuse  *= attenuation;
+        specular *= attenuation;
+        ...
+    }
+{% endhighlight %}
 
-Create a particle class that includes particle.emit(), particle.render(), particle.update() and some particle properties.
+# Spot Light
 
-Create a particle pool that contains 1000 particles. Every time when the user create particle, the particle set active from the pool. When the particle's lifetime is less 0, the particle is set to inactive.
+We need: the spotlight's position vector (to calculate the fragment-to-light's direction vector), the spotlight's direction vector and the cutoff angle.
 
-[Download codes](https://github.com/MuruC/ParticleSystem){: .btn}
+{: .center}
+{% capture images %}
+	https://user-images.githubusercontent.com/49530505/152256078-2a3dc7ea-18ac-4868-8244-26c90f35dd79.png
+{% endcapture %}
+{% include gallery images=images caption="attenuation" cols=2 %}
+
+### Caculate Angles
+
+{: .center}
+![image](https://user-images.githubusercontent.com/49530505/152256935-622da7a4-fbaf-4041-83bf-12e0c1b1c8dc.png "angles")
+{% capture images %}
+{% endcapture %}
+
+We pass the cosine value because it is easier to compare
+
+{% highlight c %}
+    struct Light {
+        vec3  position;
+        vec3  direction;
+        float cutOff;
+        ...
+    };  
+{% endhighlight %}
+
+{% highlight c %}
+    lightingShader.setFloat("light.cutOff",   glm::cos(glm::radians(12.5f)));
+{% highlight c %}
+
+calculate the theta θ value and compare this with the cutoff ϕ value to determine if we're in or outside the spotlight:
+
+if cosθ > cutOff, we can know that θ < ϕ
+
+{% highlight c %}
+    float theta = dot(lightDir, normalize(-light.direction));
+    
+    if(theta > light.cutOff) 
+    {       
+      // do lighting calculations
+    }
+    else  // else, use ambient light
+      color = vec4(light.ambient * vec3(texture(material.diffuse, TexCoords)), 1.0);
+{% endhighlight %}
+
+### Smooth Edges
+
+Set γ as outer cone angle value
+
+intensity = (θ−γ) / (ϕ−γ)
+
+{% highlight c %}
+    float theta     = dot(lightDir, normalize(-light.direction));
+    float epsilon   = light.cutOff - light.outerCutOff;
+    float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);    
+    ...
+    // we'll leave ambient unaffected so we always have a little light.
+    diffuse  *= intensity;
+    specular *= intensity;
+    ...
+{% endhighlight %}
+
+We use clamp to restrain the intensity in [0, 1]
+
+<div markdown="0"><a href="https://github.com/MuruC/OpenGL-Practice" class="btn btn-info">Download codes</a></div>
