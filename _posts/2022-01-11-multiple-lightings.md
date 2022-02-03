@@ -84,7 +84,6 @@ we include this attenuation value in the lighting calculations by multiplying th
 
 We need: the spotlight's position vector (to calculate the fragment-to-light's direction vector), the spotlight's direction vector and the cutoff angle.
 
-{: .center}
 {% capture images %}
 	https://user-images.githubusercontent.com/49530505/152256078-2a3dc7ea-18ac-4868-8244-26c90f35dd79.png
 {% endcapture %}
