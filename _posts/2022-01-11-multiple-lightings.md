@@ -77,11 +77,6 @@ We need: the spotlight's position vector (to calculate the fragment-to-light's d
 
 ### Caculate Angles
 
-{: .center}
-![image](https://user-images.githubusercontent.com/49530505/152256935-622da7a4-fbaf-4041-83bf-12e0c1b1c8dc.png "angles")
-{% capture images %}
-{% endcapture %}
-
 We pass the cosine value because it is easier to compare
 
 {% highlight c %}
