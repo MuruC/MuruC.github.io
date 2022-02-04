@@ -90,6 +90,6 @@ We pass the cosine value because it is easier to compare
 
 {% highlight c %}
     lightingShader.setFloat("light.cutOff",   glm::cos(glm::radians(12.5f)));
-{% highlight c %}
+{% endhighlight %}
 
 <div markdown="0"><a href="https://github.com/MuruC/OpenGL-Practice" class="btn btn-info">Download codes</a></div>
