@@ -79,6 +79,11 @@ We need: the spotlight's position vector (to calculate the fragment-to-light's d
 
 We pass the cosine value because it is easier to compare
 
+{% capture images %}
+	https://user-images.githubusercontent.com/49530505/152256935-622da7a4-fbaf-4041-83bf-12e0c1b1c8dc.png
+{% endcapture %}
+{% include gallery images=images caption="spot light angle" cols=2 %}
+
 {% highlight c %}
     struct Light {
         vec3  position;
@@ -91,5 +96,39 @@ We pass the cosine value because it is easier to compare
 {% highlight c %}
     lightingShader.setFloat("light.cutOff",   glm::cos(glm::radians(12.5f)));
 {% endhighlight %}
+
+
+calculate the theta θ value and compare this with the cutoff ϕ value to determine if we're in or outside the spotlight:
+
+if cosθ > cutOff, we can know that θ < ϕ
+
+{% highlight c %}
+    float theta = dot(lightDir, normalize(-light.direction));
+    
+    if(theta > light.cutOff) 
+    {       
+      // do lighting calculations
+    }
+    else  // else, use ambient light
+      color = vec4(light.ambient * vec3(texture(material.diffuse, TexCoords)), 1.0);
+{% endhighlight %}
+
+### Smooth Edges
+
+Set γ as outer cone angle value
+
+intensity = (θ−γ) / (ϕ−γ)
+
+{% highlight c %}
+    float theta     = dot(lightDir, normalize(-light.direction));
+    float epsilon   = light.cutOff - light.outerCutOff;
+    float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);    
+    ...
+    // we'll leave ambient unaffected so we always have a little light.
+    diffuse  *= intensity;
+    specular *= intensity;
+    ...
+{% endhighlight %}
+
 
 <div markdown="0"><a href="https://github.com/MuruC/OpenGL-Practice" class="btn btn-info">Download codes</a></div>
