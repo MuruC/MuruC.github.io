@@ -36,8 +36,7 @@ I did all programming parts and collaborated with Artist and Designer Jerry Liu 
 
 ## Pet simple AI by FSM
 
-<pre>
-    <code>
+{% highlight c %}
         function FsmBase:NewFSM(allState)
             self.allState = allState    
             self.curState = nil
@@ -76,8 +75,7 @@ I did all programming parts and collaborated with Artist and Designer Jerry Liu 
         	end
         	return false
         end
-    </code>
-</pre>
+{% endhighlight %}
 
 <p>Above is the base function of FSM. Specifically, FSM has OnEnter, OnLeave, OnUpdate, OnEvent. </p>
 <p>I used FSM to make pet follow, idle, dig mine and play around.</p>

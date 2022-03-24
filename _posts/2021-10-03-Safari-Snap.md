@@ -30,8 +30,8 @@ Worked in an 8-people team at Lilith Games from Mars 2021 to July 2021.
 ![image](https://user-images.githubusercontent.com/49530505/137403888-e12175ce-b501-41e9-96cd-08eac58ea4ae.png "Behavior Tree Design")
 <span class="caption">screenshot of Behavior Tree Design</span>
 <p> Other programmer can create behavior nodes by my codes.</p>
-<pre>
-<code>
+
+{% highlight c %}
 function BTMgr.CreateSequence(_name,_owner)
 	local newNode = CreateNewNode()
 	newNode:Init(_name, newNode.Type.Sequence,_owner)
@@ -51,8 +51,7 @@ function BTMgr.CreateAction(_name,_action,_owner,...)
 	newNode:SetAction(_action)
 	return newNode
 end
-</code>
-</pre>
+{% endhighlight %}
 
 ## Different types of anmial FSM inherited from base FSM.
 <p>· The game has many types of animals: bird, herbivore, carnivore, etc. So I made modules for different types of animal FSM, which improves code efficiency and work efficieny.</p>

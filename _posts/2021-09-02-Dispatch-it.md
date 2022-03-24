@@ -26,8 +26,7 @@ Collaborated with programmer Jingyu Zhuang, artist Dannis Wang, artist Nolan Pea
 ## Made narrtive system for other programmer and designer to add story nodes.
 <p>· Using custom class, structure and linked list to build narrative system. The designer and other programmer can add, remove, change or search story nodes easily with this system</p>
 
-<pre>
-<code>
+{% highlight c %}
     using DictOptionNodes = Dictionary<phonePlugInEnum, Node>;
     public enum phonePlugInEnum { hospital, police, fireStation, conversation, ring, ending }
     class Node
@@ -83,8 +82,7 @@ Collaborated with programmer Jingyu Zhuang, artist Dannis Wang, artist Nolan Pea
         public AudioSource audioSource { get; set; }
         public DictOptionNodes OptionNodes { get; set; }
     }
-</code>
-</pre>
+{% endhighlight %}
 
 ## Wrote and refine. the main structure of the game, improving team's working efficiency.
 <p>· Made a Time Manager to replace coroutine. The Time Manager includes unloop delayed event interface and loop real time event interface.</p>
